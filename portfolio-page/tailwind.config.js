@@ -57,6 +57,9 @@ module.exports = {
           950: "#321f18",
         },
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],
