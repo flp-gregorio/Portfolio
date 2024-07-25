@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioCardComponent } from './portfolio-card/portfolio-card.component'; // Ensure this is a standalone component
@@ -12,5 +13,12 @@ import { PortfolioCardComponent } from './portfolio-card/portfolio-card.componen
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio-page';
+  constructor (
+    private router: Router,
+    private titleService: Title
+  ) {}
+
+  ngOnInit() {
+
+}
 }
