@@ -1,10 +1,10 @@
 <div
-  class="flex flex-col items-center justify-center h-screen overflow-hidden bg-brandy-300"
+  class="flex flex-row items-center justify-center h-screen overflow-hidden bg-slate-100"
 >
-  <div class="container w-10/12 h-3/4 bg-nandor-700 rounded-2xl">
+  <div class="container w-10/12 h-3/4 bg-gray-600 ">
     <div class="flex flex-col items-start justify-center h-full pl-64 pr-12 font-montserrat">
-      <h1 class="text-5xl text-white mb-2">Felipe Gregorio</h1>
-      <p class="text-3xl text-white my-1">Full Stack Developer</p>
+      <h1 class="text-5xl text-orange-600 mb-2 font-bold">Felipe Gregorio</h1>
+      <h2 class="text-3xl text-white my-1">Full Stack Developer</h2>
       <p class="text-white mb-1 text-justify">
         Hello! I'm a Computer Science major from Brazil with a passion for
         games, design, photography, and modding. I thrive on creativity and
@@ -13,43 +13,83 @@
         through my lens, or customizing and enhancing software, I'm dedicated to
         pushing the boundaries of what's possible.
       </p>
+      <h3 class="text-xl text-white mt-4 mb-2">Skills & Technologies</h3>
       <div class="grid grid-cols-6 grid-rows-2 gap-2">
-        <div
-          class="w-24 h-24 bg-red-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-green-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-blue-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-purple-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-yellow-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-pink-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-orange-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-teal-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-indigo-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-gray-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-cyan-500 filter hover:brightness-90 transition-all"
-        ></div>
-        <div
-          class="w-24 h-24 bg-lime-500 filter hover:brightness-90 transition-all"
-        ></div>
+        <!-- Frontend -->
+        <div class="w-24 h-24 bg-blue-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-angular text-4xl'></i>
+            <span class="block text-xs mt-2">Angular</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-cyan-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-react text-4xl'></i>
+            <span class="block text-xs mt-2">React</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-teal-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-typescript text-4xl'></i>
+            <span class="block text-xs mt-2">TypeScript</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-green-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-javascript text-4xl'></i>
+            <span class="block text-xs mt-2">JavaScript</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-lime-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-html5 text-4xl'></i>
+            <span class="block text-xs mt-2">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-orange-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-tailwind-css text-4xl'></i>
+            <span class="block text-xs mt-2">Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="w-24 h-24 bg-purple-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-nodejs text-4xl'></i>
+            <span class="block text-xs mt-2">Node.js</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-indigo-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-unity text-4xl'></i>
+            <span class="block text-xs mt-2">Unity</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-red-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-java text-4xl'></i>
+            <span class="block text-xs mt-2">Java</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-pink-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-python text-4xl'></i>
+            <span class="block text-xs mt-2">Python</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-yellow-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bx-data text-4xl'></i>
+            <span class="block text-xs mt-2">SQL</span>
+          </div>
+        </div>
+        <div class="w-24 h-24 bg-gray-500 flex items-center justify-center text-white font-bold filter hover:brightness-90 transition-all">
+          <div class="text-center">
+            <i class='bx bxl-git text-4xl'></i>
+            <span class="block text-xs mt-2">Git</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

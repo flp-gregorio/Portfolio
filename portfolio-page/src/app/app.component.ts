@@ -13,6 +13,7 @@ import { PortfolioCardComponent } from './portfolio-card/portfolio-card.componen
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title: any;
   constructor (
     private router: Router,
     private titleService: Title
