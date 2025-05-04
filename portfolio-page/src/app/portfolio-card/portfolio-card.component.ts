@@ -14,7 +14,7 @@ export class PortfolioCardComponent {
   @Input() description: string = '';
   @Input() imageUrl: string = '';
   @Input() projectLink: string = '';
-  @Input() technologies: { name: string, color: string }[] = [];
+  @Input() technologies: { name: string, color: string, icon: string }[] = [];
   
   // Make window available in the template
   get window(): Window {

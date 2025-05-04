@@ -1,112 +1,132 @@
 <div class="min-h-screen bg-slate-100 py-16">
   <div class="container mx-auto px-4">
-    <h1 class="text-5xl font-bold text-orange-600 text-center mb-10 font-montserrat">My Projects</h1>
-    
-    <!-- Web Development Timeline -->
-    <div class="mb-16">
-      <div class="flex items-center mb-8">
-        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <h2 class="text-3xl font-bold text-orange-600 ml-4 font-montserrat">Web Development</h2>
-      </div>
-      
-      <div class="relative">
-        <!-- Timeline line -->
-        <div class="absolute left-0 w-full h-1 bg-gray-300 top-1/2 transform -translate-y-1/2"></div>
-        
-        <!-- Scrollable container -->
-        <div class="overflow-x-auto pb-4 pt-4 hide-scrollbar">
-          <div class="flex space-x-6 pl-4 pr-32 min-w-max">
-            <!-- Project Card 1 -->
-            <app-portfolio-card
-              [title]="'Gamesweep'"
-              [description]="'Gamesweep is a website where users can predict the results of The Game Awards and are rewarded and ranked based on how correctly they can guess'"
-              [imageUrl]="'https://www.creativefabrica.com/wp-content/uploads/2022/11/12/1000x1000px-Glitter-Gold-Dancing-Mermaids-Fractal-Gems-Josephine-Wall-46232475-1.png'"
-              [projectLink]="'https://github.com/yourusername/gamesweep'"
-              [technologies]="[
-                { name: 'Angular', color: 'bg-red-700' },
-                { name: 'TypeScript', color: 'bg-blue-700' },
-                { name: 'Node.js', color: 'bg-green-700' }
-              ]"
-            ></app-portfolio-card>
-            
-            <!-- Project Card 2 -->
-            <app-portfolio-card
-              [title]="'Pixel Achievements'"
-              [description]="'Pixel Achievements Tracker is a website where users can keep track of their progression on track to 100% any game they hold on Steam'"
-              [imageUrl]="'https://pics.craiyon.com/2023-07-11/17344a3fa8974f2285676c7deaf5e42b.webp'"
-              [projectLink]="'https://github.com/yourusername/pixel-achievements'"
-              [technologies]="[
-                { name: 'React', color: 'bg-blue-500' },
-                { name: 'JavaScript', color: 'bg-yellow-500' },
-                { name: 'Firebase', color: 'bg-orange-500' }
-              ]"
-            ></app-portfolio-card>
-            
-            <!-- You can add more cards here -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
+    <h1
+      class="text-5xl font-bold text-orange-600 text-center mb-10 font-montserrat"
+    >
+      My Projects
+    </h1>
+
     <!-- Game Modding Timeline -->
     <div>
       <div class="flex items-center mb-8">
-        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+        <div
+          class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+            />
           </svg>
         </div>
-        <h2 class="text-3xl font-bold text-orange-600 ml-4 font-montserrat">Game Mods</h2>
+        <h2 class="text-3xl font-bold text-orange-600 ml-4 font-montserrat">
+          Game Mods
+        </h2>
       </div>
-      
+
       <div class="relative">
         <!-- Timeline line -->
-        <div class="absolute left-0 w-full h-1 bg-gray-300 top-1/2 transform -translate-y-1/2"></div>
-        
+        <div
+          class="absolute left-0 w-full h-1 bg-gray-300 top-1/2 transform -translate-y-1/2"
+        ></div>
+
         <!-- Scrollable container -->
         <div class="overflow-x-auto pb-4 pt-4 hide-scrollbar">
           <div class="flex space-x-6 pl-4 pr-32 min-w-max">
             <!-- Project Card 1 -->
             <app-portfolio-card
-              [title]="'Spells - Increased Duration'"
-              [description]="'A mod for Baldurs Gate 3 that increases the duration of concentration spells to offer players more flexibility in combat encounters.'"
-              [imageUrl]="'https://staticdelivery.nexusmods.com/mods/4277/images/14201/14201-1691723892-1487000658.jpeg'"
-              [projectLink]="'https://www.nexusmods.com/baldursgate3/mods/14201'"
+              [title]="'Moonlight Greatsword and Ludwigs Holy Blade'"
+              [description]="
+                'A mod for Baldurs Gate 3 that brings the legendary Moonlight Greatsword and Ludwigs Holy Blade from the beloved game Bloodborne into the world of Baldurs Gate 3.'
+              "
+              [imageUrl]="
+                'https://staticdelivery.nexusmods.com/mods/3474/images/3174/3174-1697043303-717206539.png'
+              "
+              [projectLink]="'https://www.nexusmods.com/baldursgate3/mods/3174'"
               [technologies]="[
-                { name: 'Lua', color: 'bg-blue-800' },
-                { name: 'XML', color: 'bg-purple-700' }
+                { name: 'Lua', color: 'bg-blue-800', icon: 'bxs-moon' },
+                { name: 'XML', color: 'bg-purple-700', icon: 'bx-code-alt' }
               ]"
             ></app-portfolio-card>
-            
+
             <!-- Project Card 2 -->
             <app-portfolio-card
-              [title]="'Enhanced Combat System'"
-              [description]="'A custom modification for The Elder Scrolls V: Skyrim that overhauls the combat mechanics, adding new animations and systems'"
-              [imageUrl]="'https://staticdelivery.nexusmods.com/mods/110/images/thumbnails/12345-1-1371590902.jpg'"
-              [projectLink]="'https://www.nexusmods.com/skyrimspecialedition/mods/yourusername'"
+              [title]="'Bloodborne Sawcleaver'"
+              [description]="
+                'This mod seamlessly integrates the iconic Bloodborne weapon, the Sawcleaver, into Baldurs Gate 3, adding a fresh combat dynamic with its unique transforming abilities. Immerse yourself in a thrilling cross-genre adventure.'
+              "
+              [imageUrl]="
+                'https://staticdelivery.nexusmods.com/mods/3474/images/3322/3322-1697411770-336074635.png'
+              "
+              [projectLink]="'https://www.nexusmods.com/baldursgate3/mods/3322'"
               [technologies]="[
-                { name: 'Papyrus', color: 'bg-gray-700' },
-                { name: 'C++', color: 'bg-blue-900' }
+                { name: 'Lua', color: 'bg-blue-800', icon: 'bxs-moon' },
+                { name: 'XML', color: 'bg-purple-700', icon: 'bx-code-alt' }
               ]"
             ></app-portfolio-card>
-            
+
             <!-- Project Card 3 -->
-             <!-- 
             <app-portfolio-card
-              [title]="'Realistic Weather Systems'"
-              [description]="'A weather overhaul mod that adds dynamic weather patterns, seasonal changes, and environmental effects that impact gameplay'"
-              [imageUrl]="'https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/24942-1-1468029099.jpg'"
-              [projectLink]="'https://www.nexusmods.com/fallout4/mods/yourusername'"
+              [title]="'Oath of the Eldritch Hunt - Paladin Subclass'"
+              [description]="
+                'Inspired by Bloodborne and Steinhardts Guide to the Eldritch Hunt, this mod introduces the Oath of the Eldritch Hunt for Paladins, purge Baldurs Gate from the endritch curse that plagues it.'
+              "
+              [imageUrl]="
+                'https://staticdelivery.nexusmods.com/mods/3474/images/13689/13689-1731389118-1580195900.png'
+              "
+              [projectLink]="
+                'https://www.nexusmods.com/baldursgate3/mods/13689'
+              "
               [technologies]="[
-                { name: 'GECK', color: 'bg-red-700' },
-                { name: 'Papyrus', color: 'bg-gray-700' }
+                { name: 'Lua', color: 'bg-blue-800', icon: 'bxs-moon' },
+                { name: 'XML', color: 'bg-purple-700', icon: 'bx-code-alt' }
               ]"
             ></app-portfolio-card>
-          -->
+
+            <!-- Project Card 4 -->
+            <app-portfolio-card
+              [title]="'Blood Archer - Fighter Subclass'"
+              [description]="
+                'Blood Archer introduces a custom archetype for the Fighter class in Baldurs Gate 3. Harness the power of cursed archery and weave blood magic into your arrows to unleash supernatural effects.'
+              "
+              [imageUrl]="
+                'https://staticdelivery.nexusmods.com/mods/3474/images/13864/13864-1731957569-1717819960.png'
+              "
+              [projectLink]="
+                'https://www.nexusmods.com/baldursgate3/mods/13864'
+              "
+              [technologies]="[
+                { name: 'Lua', color: 'bg-blue-800', icon: 'bxs-moon' },
+                { name: 'XML', color: 'bg-purple-700', icon: 'bx-code-alt' }
+              ]"
+            ></app-portfolio-card>
+
+            <!-- Project Card 5 -->
+            <app-portfolio-card
+              [title]="'Blade of Radiance - Rogue Subclass'"
+              [description]="
+                'Wield divine power with precision and fervor as a Blade of Radiance, a Rogue subclass that specializes in great weapons, Baldurs Gate will tremble before your faith.'
+              "
+              [imageUrl]="
+                'https://staticdelivery.nexusmods.com/mods/3474/images/14201/14201-1733815587-948085556.png'
+              "
+              [projectLink]="
+                'https://www.nexusmods.com/baldursgate3/mods/14201'
+              "
+              [technologies]="[
+                { name: 'Lua', color: 'bg-blue-800', icon: 'bxs-moon' },
+                { name: 'XML', color: 'bg-purple-700', icon: 'bx-code-alt' }
+              ]"
+            ></app-portfolio-card>
+
             <!-- You can add more cards here -->
           </div>
         </div>
@@ -116,14 +136,14 @@
 </div>
 
 <style>
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 </style>
