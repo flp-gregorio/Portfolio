@@ -1,5 +1,8 @@
 {
+  "version": 2,
+  "public": true,
+  "outputDirectory": "dist/portfolio-page/browser",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/src/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
