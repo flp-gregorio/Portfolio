@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-portfolio-card',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './portfolio-card.component.html',
-  styleUrls: ['./portfolio-card.component.css']
+    selector: 'app-portfolio-card',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './portfolio-card.component.html',
+    styleUrls: ['./portfolio-card.component.css']
 })
 export class PortfolioCardComponent {
   @Input() title: string = '';
