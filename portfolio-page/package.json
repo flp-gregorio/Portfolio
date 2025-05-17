@@ -22,6 +22,7 @@
     "@angular/router": "^19.2.11",
     "@angular/ssr": "^19.2.12",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@soarlin/angular-color-thief": "^2.0.4",
     "boxicons": "^2.1.4",
     "express": "^5.1.0",
     "rxjs": "^7.8.2",
@@ -32,6 +33,7 @@
     "@angular-devkit/build-angular": "^19.2.12",
     "@angular/cli": "^19.2.12",
     "@angular/compiler-cli": "^19.2.11",
+    "@tailwindcss/postcss": "^4.1.7",
     "@types/express": "^5.0.2",
     "@types/jasmine": "^5.1.8",
     "@types/node": "^22.15.18",
@@ -42,7 +44,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "postcss": "^8.4.39",
+    "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3"
   }
