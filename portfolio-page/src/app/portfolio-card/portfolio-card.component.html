@@ -1,7 +1,7 @@
 <div
   class="flex-none w-80 bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 cursor-pointer"
   [routerLink]="projectLink ? projectLink : null"
-  [attr.click]="projectLink ? 'window.open(\'' + projectLink + '\', \'_blank\')' : null"
+  (click)="openProject($event)"
 >
   <img
     [src]="imageUrl"

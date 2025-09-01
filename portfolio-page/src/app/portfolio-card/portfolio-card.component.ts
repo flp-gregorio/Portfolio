@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, Inject, PLATFORM_ID, Optional } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ColorThiefService } from '@soarlin/angular-color-thief';
 
@@ -18,13 +18,25 @@ export class PortfolioCardComponent {
   palette: [number, number, number][] | null = null;
   
   // Make window available in the template
-  get window(): Window {
-    return window;
+  get window(): Window | undefined {
+    return isPlatformBrowser(this.platformId) ? window : undefined;
   }
 
-  constructor(private colorThief: ColorThiefService) {}
+  constructor(
+    @Optional() private colorThief: ColorThiefService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
+
+  openProject(event: Event): void {
+    if (!isPlatformBrowser(this.platformId) || !this.projectLink) return;
+    
+    event.preventDefault();
+    window.open(this.projectLink, '_blank');
+  }
 
   async loadPaletteFromUrl() {
+    if (!isPlatformBrowser(this.platformId) || !this.colorThief) return;
+    
     try {
       this.palette = await this.colorThief.getPaletteFromUrl(this.imageUrl);
       console.log('Palette loaded:', this.palette);

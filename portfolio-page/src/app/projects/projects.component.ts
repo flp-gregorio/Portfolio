@@ -1,5 +1,5 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ViewChild, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { PortfolioCardComponent } from '../portfolio-card/portfolio-card.component';
 
 @Component({
@@ -11,7 +11,11 @@ import { PortfolioCardComponent } from '../portfolio-card/portfolio-card.compone
 export class ProjectsComponent {
   @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   onWheel(event: WheelEvent): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    
     event.preventDefault();
     const container = this.scrollContainer.nativeElement;
     const scrollAmount = event.deltaY;
@@ -21,11 +25,15 @@ export class ProjectsComponent {
   }
 
   scrollLeft(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    
     const container = this.scrollContainer.nativeElement;
     container.scrollBy({ left: -300, behavior: 'smooth' });
   }
 
   scrollRight(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    
     const container = this.scrollContainer.nativeElement;
     container.scrollBy({ left: 300, behavior: 'smooth' });
   }
