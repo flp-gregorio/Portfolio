@@ -3,12 +3,11 @@ import { Title } from '@angular/platform-browser';
 import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { PortfolioCardComponent } from './portfolio-card/portfolio-card.component';
 import { filter, map } from 'rxjs/operators';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, NavbarComponent, FooterComponent, PortfolioCardComponent],
+    imports: [RouterOutlet, NavbarComponent, FooterComponent],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })

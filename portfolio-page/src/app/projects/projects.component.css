@@ -1,0 +1,25 @@
+/* Additional scroll improvements */
+.scroll-container {
+  cursor: grab;
+}
+
+.scroll-container:active {
+  cursor: grabbing;
+}
+
+/* Ensure smooth animations */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Improve touch scrolling on mobile */
+@media (max-width: 768px) {
+  .scroll-container {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .scroll-container > div > * {
+    scroll-snap-align: start;
+  }
+}
